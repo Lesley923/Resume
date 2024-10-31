@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects 项目经验</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>项目经验</h1>
+    <img src="/images/portrait.jpeg" alt="Portrait of 房济美" class="portrait-image" />
+    <nav>
+        <a href="/">Home 首页</a>
+        <a href="/skill">Skills 专业技能</a>
+        <a href="/projects">Projects 项目经验</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>项目经历</h2>
+
+      <!-- Project 1 -->
+      <article class="project">
+        <h3>分布式 Key-Value 存储系统设计与实现</h3>
+        <p><strong>时间:</strong> 2024年03月 - 2024年06月</p>
+        <p><strong>描述:</strong></p>
+        <ul>
+            <li> 设计并实现了一个基于 Multi-Raft 架构的分布式 KV 存储系统，实现高可用、高性能和强一致性的数据存储。</li>
+          <li>采用 Raft 一致性算法，确保数据在多节点间的一致性，通过 Leader 选举、日志复制和快照机制提升系统可靠性。</li>
+          <li>使用一致性哈希算法进行数据分片，实现动态负载均衡和水平扩展，支持 PB 级别数据的高效存储。</li>
+          <li>通过异步处理、ReadIndex 优化、Follower 读等技术，提升系统的读写性能，达到每秒数百万次请求 (QPS)。</li>
+          <li>支持多种底层存储引擎 (如 RocksDB、B+树)，根据场景需求优化数据存储和检索速度。</li>
+        </ul>
+      </article>
+      <hr>
+
+      <!-- Project 2 -->
+      <article class="project">
+        <h3>图形软件开发 - Scotty3D (卡耐基梅隆大学 CG 课课程设计)</h3>
+        <p><strong>时间:</strong> 2023年10月 - 2023年12月</p>
+        <p><strong>描述:</strong> </p>
+        <ul>
+            <li>实现了简化的软件光栅化管线的各个组件，实现了 3D 三角形到 2D 像素的转换，使 Scotty3D 能够在没有 GPU 的情况下进行预览渲染。</li>
+          <li>开发了光栅化管线的各个阶段，包括顶点处理、三角形裁剪、片段着色和帧缓冲合成，遵循现代 GPU 光栅化技术的流程。</li>
+          <li>使用半边数据结构创建了交互式网格编辑功能，支持高效的局部拓扑变化及顶点、边、面和面角的数据处理。</li>
+          <li>通过用 C++ 编写的几何处理和渲染模块的改进，提升了代码库的功能和性能。</li>
+        </ul>
+      </article>
+      <hr>
+
+      <!-- Project 3 -->
+      <article class="project">
+        <h3>游戏商店平台</h3>
+        <p><strong>时间:</strong> 2023年05月 - 2023年08月</p>
+        <p><strong>描述:</strong></p>
+        <ul>
+         <li> 设计并实现用户注册与登录模块、商品展示模块、购物车模块、订单管理模块（集成第三方支付接口，支持多种支付方式）、物流管理模块。</li>
+          <li>将系统划分为用户、商品、订单等模块，采用 MySQL、Redis、RocketMQ 等技术栈满足不同业务需求。</li>
+          <li>选用 Redis 作为缓存层提升用户会话管理和购物车性能，使用 RocketMQ 处理异步操作确保数据一致性。</li>
+          <li>设计无状态服务架构与负载均衡，提高系统的高可用性，同时通过分库分表实现扩展性。</li>
+          <li>采用 Elasticsearch 提升商品搜索速度与准确性，利用 Redis 缓存热点数据优化数据库访问性能并实施异步处理机制。</li>
+        </ul>
+      </article>
+      <hr>
+
+      <!-- Project 4 -->
+      <article class="project">
+        <h3>电影评分网站 - Ramovie</h3>
+        <p><strong>时间:</strong> 2023年04月 - 2023年05月</p>
+        <p><strong>描述:</strong> </p>
+        <ul>
+            <li>使用 Node.js 和 Express.js 开发后端服务器，创建用户注册、登录、电影检索、评分、评论和管理员操作的 API 接口。</li>
+          <li>设计数据模式和模型，并连接至 MongoDB Atlas。</li>
+          <li>实现基于 JSON Web Token (JWT) 的身份验证和授权机制，并进行数据的增删查改 (CRUD) 操作。</li>
+        </ul>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>

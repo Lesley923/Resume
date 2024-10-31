@@ -1,0 +1,104 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Styling */
+  section {
+    margin-bottom: 2em;
+  }
+  section h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.2em;
+  }
+  section p {
+    margin: 0.5em 0;
+    line-height: 1.6;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    margin-bottom: 1em;
+  }
+  
+  /* Contact Links */
+  #contact-info p {
+    margin: 0.5em 0;
+  }
+  #contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  #contact-info a:hover {
+    text-decoration: underline;
+  }
+  /* Portrait Image Styling */
+.portrait-image {
+    width: 150px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes it circular */
+    display: block;
+    margin: 1em auto; /* Center the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  /* Divider Styling */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em 0;
+  }
+  .skill-category {
+    margin-bottom: 20px; /* Adds spacing between skill categories */
+  }
+  
+  .skill-category h3 {
+    color: #333; /* Change to your preferred color */
+    font-size: 1.5em; /* Larger font size for category titles */
+    margin-bottom: 5px; /* Spacing below the category title */
+  }
+  
